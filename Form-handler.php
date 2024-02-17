@@ -22,7 +22,7 @@ if(isset($_POST['submit'])) {
   mail($to, $email_subject, $email_body, $headers);
 
   // Redirect to a thank you page after sending the email
-  header("Location: thank-you.html");
+  header("Location: index.html");
 } else {
   // If the form is not submitted, redirect back to the contact page
   header("Location: contact.html");
