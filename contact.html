@@ -72,20 +72,19 @@
       </div>
 
       <div class="contact-col">
-        <form action="https://formsubmit.co/890d23a429e84f9136a74801392c2e51" method="POST">
-          <!-- Honey pot field to prevent spam -->
-          <input type="text" name="_honey" style="display: none" />
-          <!-- Regular input fields -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="ca475dab-2f9c-4781-8cd0-18b553701a4f">
           <input type="text" name="name" placeholder="Enter Your Name" required>
           <input type="email" name="email" placeholder="Enter Your Email" required>
           <input type="text" name="subject" placeholder="Enter Your Subject" required>
           <textarea name="message" rows="8" placeholder="Message" required></textarea>
-          <!-- Hidden input field to redirect after form submission -->
-          <input type="hidden" name="_next" value="https://yourdomain.co/index.html">
-          <!-- Submit button -->
+          <div class="h-captcha" data-captcha="true"></div>
           <button type="submit" class="hero-btn red-btn">Send Message</button>
         </form>
       </div>
+
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+
 
       <script src="https://web3forms.com/client/script.js" async defer></script>
 
