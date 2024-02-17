@@ -72,14 +72,21 @@
       </div>
 
       <div class="contact-col">
-        <form action="form-handler.php" method="post">
+        <form action="https://formsubmit.co/isaacxlcodes@yahoo.com" method="POST">
+          <!-- Honey pot field to prevent spam -->
+          <input type="text" name="_honey" style="display: none" />
+          <!-- Regular input fields -->
           <input type="text" name="name" placeholder="Enter Your Name" required>
           <input type="email" name="email" placeholder="Enter Your Email" required>
           <input type="text" name="subject" placeholder="Enter Your Subject" required>
           <textarea name="message" rows="8" placeholder="Message" required></textarea>
+          <!-- Hidden input field to redirect after form submission -->
+          <input type="hidden" name="_next" value="https://yourdomain.co/index.html">
+          <!-- Submit button -->
           <button type="submit" class="hero-btn red-btn">Send Message</button>
         </form>
       </div>
+
 
 
       </div>
